@@ -5,6 +5,7 @@
 //  Created by Eric Walsh on 1/30/14.
 //
 //
+#include <algorithm>
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -54,4 +55,28 @@ public:
 };
 
 
-#endif /* defined(____SortedList__) */
+#endif /* defined(____SortedArrayList__) */
+
+
+#ifndef ____SortedLinkedList__
+#define ____SortedLinkedList__
+
+class SortedLinkedList{
+
+private:
+    ListNode * head;
+public:
+    SortedLinkedList();
+    SortedLinkedList(ListNode * inp);
+    ~SortedLinkedList();
+    void insert(string word);
+    bool find(string word);
+    void remove(string word);
+    void print();
+    bool isEmpty();
+    bool isFull();
+
+};
+
+
+#endif /* defined(____SortedLinkedList__) */
