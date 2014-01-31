@@ -1,6 +1,6 @@
 //
 //  SortedList.h
-//  
+//
 //
 //  Created by Eric Walsh on 1/30/14.
 //
@@ -15,7 +15,7 @@ using namespace std;
 #define ____ListNode__
 
 class ListNode{
-    
+
 public:
     string info;
     ListNode * next;
@@ -30,37 +30,26 @@ public:
 #endif // list_node
 
 
-#ifndef ____SortedList__
-#define ____SortedList__
-
-
-
-class SortedList{
-
-public:
-    SortedList();
-    ~SortedList();
-    void insert(string word);
-    bool find(string word);
-    void remove(string word);
-    bool isEmpty();
-    bool isFull();
-};
-
-#endif /* defined(____SortedList__) */
-
 #ifndef ____SortedArrayList__
 #define ____SortedArrayList__
 
-class SortedArrayList : public SortedList{
+class SortedArrayList{
 
 private:
     string * buf;
-    int capacity, size;
+    int capacity=45500, size=0;
 public:
     SortedArrayList();
     SortedArrayList(int cap);
     ~SortedArrayList();
+    void insert(string word);
+    bool find(string word);
+    void remove(string word);
+    void crunchDown(int inp);
+    void crunchUp(int inp, string word);
+    void print();
+    bool isEmpty();
+    bool isFull();
 
 };
 
