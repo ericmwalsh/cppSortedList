@@ -1,5 +1,2 @@
-CC=gcc
-CFLAGS=-I.
-
-hellomake: hellomake.o hellofunc.o
-     $(CC) -o hellomake hellomake.o hellofunc.o -I.
+testmake: SortedList.cpp fileListFunctions.cpp testSortedList.cpp
+	gcc -o testmake SortedList.cpp fileListFunctions.cpp testSortedList.cpp -I.

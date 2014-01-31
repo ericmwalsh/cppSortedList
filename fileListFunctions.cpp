@@ -6,7 +6,7 @@
 //
 //
 
-#include "SortedList.cpp"
+//#include "SortedList.cpp"
 #include "PCTimer.h"
 
 void insertAllWords(char * fileName, SortedArrayList * inp){
