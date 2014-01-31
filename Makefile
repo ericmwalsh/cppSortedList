@@ -1,2 +1,2 @@
 testmake: SortedList.cpp fileListFunctions.cpp testSortedList.cpp
-	gcc -o testmake SortedList.cpp fileListFunctions.cpp testSortedList.cpp -I.
+	g++ SortedList.cpp fileListFunctions.cpp testSortedList.cpp -o testmake -I.
