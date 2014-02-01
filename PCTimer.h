@@ -1,4 +1,20 @@
-#include <time.h>  // there is only old version of time, so .h is needed
+#include <time.h> 
+#include <algorithm>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include "SortedList.h"
+using namespace std;
+
+
+void insertAllWords(char * fileName, SortedArrayList * inp);
+bool findAllWords(char * fileName, SortedArrayList * inp);
+void removeAllWords(char * fileName, SortedArrayList * inp);
+void insertAllWords(char * fileName, SortedLinkedList * inp);
+bool findAllWords(char * fileName, SortedLinkedList * inp);
+void removeAllWords(char * fileName, SortedLinkedList * inp);
+
+ // there is only old version of time, so .h is needed
 // defines CLOCKS_PER_SEC and CLK_TCK
 
 class PCTimer

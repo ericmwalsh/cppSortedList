@@ -5,10 +5,9 @@
 //  Created by Eric Walsh on 1/30/14.
 //
 //
-#include <algorithm>
+
 #include <string>
 #include <iostream>
-#include <fstream>
 using namespace std;
 
 

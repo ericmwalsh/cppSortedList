@@ -9,6 +9,7 @@
 //#include "SortedList.cpp"
 #include "PCTimer.h"
 
+
 void insertAllWords(char * fileName, SortedArrayList * inp){
     PCTimer t;
     t.start();
@@ -89,3 +90,8 @@ void removeAllWords(char * fileName, SortedLinkedList * inp){
     t.stop();
     cout << "SortedLinkedList: Time to removeAllWords from " << fileName << ": " << t.elapsedTime() << " secs" << endl;
 }
+/**
+int main(){
+    return 0;
+}
+**/

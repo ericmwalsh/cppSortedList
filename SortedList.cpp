@@ -139,18 +139,34 @@ bool SortedLinkedList::find(string word){
 //O(N) - actual removal is O(1) but searching causes it to be O(N)
 void SortedLinkedList::remove(string word){
     if(!isEmpty()){
-        for(ListNode * i = head; i; i=i->next){
+        for(ListNode * i = head, *j = head; i; i=i->next){
+            //cout << i->info << " HAHA" << endl;
             if(i->info==word){
-                i->info= i->next->info;
-                i->next= i->next->next;
-                delete &i->next;
-                return;
+                if(i->next==NULL){
+                    if(i==head) head = NULL;
+
+                    else j->next=NULL;
+                }
+                else{
+                    i->info= i->next->info;
+                    i->next= i->next->next;
+                    break;
+                }
             }
+            if(i->next!=NULL && i->next->next!=NULL) j=j->next;
         }
     }
-
 }
 //O(N)
 void SortedLinkedList::print(){
     for(ListNode * i = head; i; i=i->next) cout << i->info << endl;
 }
+//O(1)
+SortedLinkedList::~SortedLinkedList(){
+    delete head;
+}
+/**
+int main(){
+    return 0;
+}
+**/

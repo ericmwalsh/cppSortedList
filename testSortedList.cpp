@@ -7,6 +7,14 @@
 //
 
 //#include "fileListFunctions.cpp"
+//#include <time.h> 
+//#include <algorithm>
+//#include <string>
+#include <iostream>
+#include <fstream>
+#include "SortedList.h"
+#include "PCTimer.h"
+using namespace std;
 
 void testSAL(){
     SortedArrayList * a = new SortedArrayList();
@@ -47,9 +55,10 @@ void testSLL(){
     a->insert("zz");
     a->print();
     cout << endl << endl << "REMOVED AFTER THIS :" << endl << endl;
-    a->remove("dog");
+    a->remove("zxc");
     a->remove("apple");
     a->remove("sup");
+    a->remove("zz");
     a->print();
 }
 int main(int argc, const char * argv[])
@@ -66,7 +75,6 @@ int main(int argc, const char * argv[])
     insertAllWords("random.txt", b);
     cout << "WERE ALL WORDS FOUND?: " << findAllWords("words.txt", b) << endl;
     removeAllWords("random.txt", b);
-
 
     return 0;
 }
