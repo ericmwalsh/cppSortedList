@@ -1,4 +1,6 @@
 ::::::::::::::::::README::::::::::::::::::
+
+
 Included files:
 -SortedList.h
 -SortedList.cpp (SOURCE CODE - implementation of ListNode and SortedList classes)
@@ -7,7 +9,11 @@ Included files:
 -testSortedList.cpp (misc test methods and int main() located here)
 
 -makefile
+-random.txt
+-words.txt
 
+
+The program inserts words from "random.txt", checks them against all the words in "words.txt", then removes all the words from "random.txt".
 
 In order to compile, unzip and open a terminal in the directory.
 
